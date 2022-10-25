@@ -15,8 +15,15 @@
     "issueType": "DEPENDENCY"
   },
   "remediateSettings": {
-    "workflowRules": {
-      "enabled": true
+  "workflowRules": {
+    "enabled": true
+  },
+  "enableRenovate": true,
+    "extends": ["config:base"],
+    "ignorePresets": [":prHourlyLimit2"],
+    "transitiveRemediation": true,
+    "major": {
+    "dependencyDashboardApproval": true
     }
   }
 }
