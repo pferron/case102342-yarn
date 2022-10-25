@@ -1,0 +1,43 @@
+{
+  "name": "lyndale",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=16"
+  },
+  "packageManager": "yarn@3.2.4",
+  "repository": "web/lyndale",
+  "workspaces": [
+    "integration/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn turbo run build",
+    "clean": "yarn workspaces foreach -pv run clean",
+    "clean:turbo": "shx rm -rf node_modules/.cache/turbo",
+    "format": "prettier --write \"**/*.{js,jsx,cjs,mjs,ts,tsx,md,json}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,cjs,mjs,ts,tsx,md,json}\"",
+    "lint": "yarn turbo run lint --parallel",
+    "release": "auto shipit",
+    "reset": "",
+    "test": "yarn turbo run test",
+    "upgrade:yarn": "yarn set version latest",
+    "version": "yarn install && git add yarn.lock"
+  },
+  "devDependencies": {
+    "@auto-it/all-contributors": "10.37.6",
+    "@auto-it/conventional-commits": "10.37.6",
+    "@auto-it/first-time-contributor": "10.37.6",
+    "@auto-it/npm": "10.37.6",
+    "@auto-it/released": "10.37.6",
+    "@types/node": "16.11.65",
+    "auto": "10.37.6",
+    "conventional-changelog-conventionalcommits": "5.0.0",
+    "lerna": "5.6.2",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
+    "shx": "0.3.4",
+    "turbo": "1.5.6",
+    "typescript": "4.8.4"
+  }
+}
