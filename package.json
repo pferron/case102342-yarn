@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@auto-it/all-contributors": "10.37.6",
-    "@auto-it/conventional-commits": "10.37.6",
+    "@auto-it/conventional-commits": "10.46.0",
     "@auto-it/first-time-contributor": "10.37.6",
     "@auto-it/npm": "10.37.6",
     "@auto-it/released": "10.37.6",
