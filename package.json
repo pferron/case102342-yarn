@@ -29,7 +29,7 @@
     "@auto-it/conventional-commits": "10.37.6",
     "@auto-it/first-time-contributor": "10.37.6",
     "@auto-it/npm": "10.37.6",
-    "@auto-it/released": "10.37.6",
+    "@auto-it/released": "10.46.0",
     "@types/node": "16.11.65",
     "auto": "10.37.6",
     "conventional-changelog-conventionalcommits": "5.0.0",
